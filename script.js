@@ -90,13 +90,6 @@ window.addEventListener('click', (e) => {
       modal.setAttribute('aria-hidden','true');
     }
   });
-});
-
-// prevent actual form submit for demo
-document.getElementById('contactForm')?.addEventListener('submit', function(e){
-  e.preventDefault();
-  alert('Thanks! (form submission is disabled in this demo)'); // replace with real submit later
-});
 
 // initialize default visible section
 showSectionById('home');
