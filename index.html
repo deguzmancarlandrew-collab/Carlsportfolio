@@ -97,12 +97,16 @@
           <div class="contact-card"><strong>Facebook</strong><p><a href="https://www.facebook.com/itsyahboycarl" target="_blank">Carl Andrew De Guzman</a></p></div>
         </div>
 
-        <form id="contactForm" class="contact-form">
-          <input name="name" type="text" placeholder="Your name" required>
-          <input name="email" type="email" placeholder="Your email" required>
-          <textarea name="message" placeholder="Your message" rows="5" required></textarea>
-          <button type="submit" class="btn primary">Send Message</button>
-        </form>
+        <form action="https://formspree.io/f/xqalwqyb" method="POST" class="contact-form">
+  <input name="name" type="text" placeholder="Your name" required>
+  <input name="email" type="email" placeholder="Your email" required>
+  <textarea name="message" placeholder="Your message" rows="5" required></textarea>
+
+  <!-- optional but recommended -->
+  <input type="hidden" name="_subject" value="New Portfolio Message">
+
+  <button type="submit" class="btn primary">Send Message</button>
+</form>
       </div>
     </section>
 
